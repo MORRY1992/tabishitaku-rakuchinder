@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tabishitaku-rakuchinder.pages.dev/sitemap.xml
