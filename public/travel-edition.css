@@ -1,0 +1,44 @@
+/* Travel edition: page navigation, illustrated cover and working surfaces. */
+@media screen {
+:root{--brand:#234e63;--ink:#213742;--paper:#f6f4eb;--pale:#e7ece8;--rule:#b4b9ad;--display:"Yu Mincho","Hiragino Mincho ProN","Noto Serif CJK JP",serif}
+body{background:var(--paper);color:var(--ink);padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right))}
+header,main,footer{max-width:1120px}
+header{display:flex;align-items:center;justify-content:flex-start;gap:12px;padding:12px 0;min-height:72px;border-bottom:2px solid var(--ink)}
+header nav{margin-left:auto} header b:before,header>b:before{display:none}
+.series-link{background:var(--brand);color:#ffe1a4;border-radius:50% 50% 50% 5%;width:40px;height:40px;display:grid;place-items:center;text-decoration:none;font:bold italic 28px Georgia,serif;flex:none}
+header nav a{font-weight:680;color:var(--ink);font-size:14px}
+.hero{display:grid;grid-template-columns:1fr 1.04fr;align-items:stretch;margin:20px 0 0;padding:0;border:1px solid var(--rule);border-radius:4px;box-shadow:none;background:var(--pale);color:var(--ink)}
+.cover-copy{padding:clamp(24px,4vw,54px);align-self:center}
+.hero h1{margin:0;font:800 clamp(34px,4vw,59px)/1.35 var(--display);letter-spacing:-.045em;max-width:none}
+.cover-copy p{margin:17px 0 20px;font-size:15px;max-width:33em}
+.cover-copy nav{align-items:center;column-gap:18px;row-gap:3px}
+.hero a.hero-cta{background:var(--brand);color:white;padding:11px 16px;border-radius:4px;font-size:15px}
+.hero a.cover-sub{color:var(--ink);font-weight:700;font-size:14px;text-underline-offset:.25em}
+.cover-art{width:100%;height:100%;min-width:0;object-fit:cover;max-height:440px}
+.hero + .fine{color:#4a594f;font-size:12px;line-height:1.6;margin:9px 0 24px}
+.panel{border:0;border-radius:0;border-top:1px solid var(--rule);box-shadow:none;background:transparent;padding:30px 0;margin:0}
+#tool,#compare{background:#fffdf8;border:1px solid var(--rule);border-top:4px solid var(--brand);border-radius:4px;padding:clamp(18px,3vw,36px);margin:20px 0}
+.panel h2{font:800 clamp(22px,2.5vw,32px)/1.5 var(--display);margin:0 0 10px}
+.panel h3{line-height:1.5}.step-title:before{display:none}
+.grid.two{gap:20px}.grid>.card{border-radius:4px;background:#f7f7ef;border:1px solid var(--rule)}
+.card legend{border-radius:2px;background:var(--brand)}
+input:not([type=checkbox]),select,textarea{border-color:#98a69f;border-radius:4px;background:white}
+button,.btn{border-radius:4px}
+button:not(.secondary):not(.danger):not(.remove-item):not([class]){background:var(--brand);color:white}
+.result:not(:empty){border-left:4px solid var(--brand);border-radius:2px;background:var(--pale);font-variant-numeric:tabular-nums}
+.profile-box,.saved-panel{border-radius:4px;background:var(--pale);border-color:var(--rule)}
+.packing-row{border-bottom-color:#c8cec3}.packing-row input{accent-color:var(--brand)}
+footer{border-top:2px solid var(--ink)}
+@media(max-width:700px){
+header{gap:8px;min-height:56px;flex-wrap:wrap;padding:9px 0 4px}header>b{font-size:15px}.series-link{width:30px;height:30px;font-size:22px}header nav{flex-basis:100%;margin:0;gap:16px}header nav a{min-height:36px;font-size:13px}
+.hero{display:flex;flex-direction:column-reverse;margin-top:12px}.cover-art{width:100%;height:auto;aspect-ratio:3.0;object-position:50% 58%}
+.cover-copy{padding:17px 18px 15px;align-self:stretch}.hero h1{font-size:clamp(25px,6.6vw,36px);line-height:1.37}.hero h1 br{display:none}
+.cover-copy p{margin:8px 0 10px;font-size:14px;line-height:1.65}.cover-copy nav{gap:12px}.hero a.hero-cta{min-height:44px;font-size:14px;padding:8px 12px}
+#tool,#compare{padding:18px 15px;margin:14px 0}.hero+.fine{margin:8px 0 15px}.panel{padding:23px 0}.grid.two{gap:12px}
+}
+}
+@media screen {
+:root{--brand:#286153;--ink:#263c32;--pale:#e9ead9;--rule:#b7bdab}
+.case-list,.packing-row{background:#fffdf7}.packing-row{padding:5px 8px}
+.progress{height:11px;background:#d4ddca}.progress span{background:#2b6953}
+}
